@@ -26,8 +26,8 @@ extern "C" {
 
 		MACHINASDK_API typedef sockaddr_in udp_server_sender;
 
-		MACHINASDK_API udp_server* udp_server_create(uint16_t port);
-		MACHINASDK_API void			udp_server_destroy(udp_server* server);
+		MACHINASDK_API udp_server* 	udp_server_create(uint16_t port);
+		MACHINASDK_API void		udp_server_destroy(udp_server* server);
 		MACHINASDK_API int32_t		udp_server_receive(udp_server* server, udp_server_sender* sender, char* buffer, int16_t buffer_size);
 		MACHINASDK_API int32_t		udp_server_send(udp_server* server, udp_server_sender* sender, const char* data);
 	}; // namespace machinasdk
